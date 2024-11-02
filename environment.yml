@@ -1,0 +1,20 @@
+name: myenv  # Name your environment
+channels:
+  - conda-forge  # Adding conda-forge to ensure wider package availability
+  - defaults
+dependencies:
+  - python>=3.9  # or another version you prefer
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - graphviz  # This may require a separate graphviz installation if you're on macOS or Linux
+  - scikit-learn
+  - xgboost
+  - optuna
+  - scipy
+  - shap
+  - seaborn
+  - pip  # Enables pip installations within the environment
+  - pip:
+    - graphviz  # Sometimes required as a standalone installation for plotting dependencies
