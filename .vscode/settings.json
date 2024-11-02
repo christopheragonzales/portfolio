@@ -1,0 +1,17 @@
+{
+    // Set the Conda environment interpreter as the default for this workspace
+    "python.defaultInterpreterPath": "/Users/christopher.gonzales/miniconda3/envs/myenv/bin/python",
+    
+    // Optional: Configure the Jupyter server to use the local environment
+    "jupyter.jupyterServerType": "local",
+    
+    // Optional: Automatically select the interpreter in notebooks
+    "python.terminal.activateEnvironment": true,
+    
+    // Optional: Enable linting if desired
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+
+    // Optional: Set Black as the default formatter for Python
+    "python.formatting.provider": "black"
+}
