@@ -1,7 +1,6 @@
-# Module 1 Notes
+# How Business Intelligence Makes an Impact
 
 ## Table of Contents
-- [How Business Intelligence Makes an Impact](#how-business-intelligence-makes-an-impact)
 - [Key Business Intelligence Documents](#key-business-intelligence-documents)
   - [Stakeholder Requirements Document](#stakeholder-requirements-document)
   - [Project Requirements Document](#project-requirements-document)
@@ -19,9 +18,7 @@
     - [Pre-attentive Attributes: Marks and Channels](#pre-attentive-attributes-marks-and-channels)
     - [Design Principles](#design-principles)
     - [Avoiding Misleading or Deceptive Charts](#avoiding-misleading-or-deceptive-charts)
-
-## How Business Intelligence Makes an Impact
-- [Key Business Intelligence Documents](#key-business-intelligence-documents)
+- [Prepare to Assess Your Readiness for the Google Business Intelligence Certificate](#prepare-to-assess-your-readiness-for-the-google-business-intelligence-certificate)
 
 ## Key Business Intelligence Documents
 - [Stakeholder Requirements Document](#stakeholder-requirements-document)
@@ -36,7 +33,7 @@ Each of these documents builds on the previous one. Instead of three separate do
 
 The Stakeholder Requirements Document enables you to capture stakeholder requests and requirements so you understand their needs before planning the rest of the project details or strategy. It should answer the following questions:
 
-- Business problem: What is the primary question to be answered or      problem to be solved?
+- Business problem: What is the primary question to be answered or problem to be solved?
 - Stakeholders: Who are the major stakeholders of this project, and what are their job titles?
 - Stakeholder usage details: How will the stakeholders use the BI tool?
 - Primary requirements: What requirements must be met by this BI tool in order for this project to be successful?
@@ -208,3 +205,24 @@ Make your visualizations accessible and useful to everyone in your audience by k
 - Text-based format
 - Distinguishing
 - Simplifying
+
+## Prepare to Assess Your Readiness for the Google Business Intelligence Certificate
+
+The Google Business Intelligence Certificate is a program for everyone interested in BI. However, a background in data analytics is a useful foundation for many of the concepts that will be taught in these courses. We have created a quiz that will enable you to assess your readiness and decide if you would like to proceed with the certificate or review some foundations first.
+
+The quiz will ask questions about how comfortable you are with the following data analytics concepts:
+
+- General data analytics principles and data types
+- Data strategy
+- Data integrity and data cleaning
+- Spreadsheet and SQL tools for data aggregation and analysis
+- Programming languages
+- Data visualization, dashboards, and sharing insights with others
+
+If you are coming to this program from the Google Data Analytics Certificate or you have worked in a data analytics field, you may already be familiar with these concepts. That’s great! This quiz is just a way to double-check that you’re prepared to succeed. Plus, it will provide you with some resources to give you a refresher before moving on.
+
+To help you decide if you’re ready for this course:
+
+- Take the optional readiness quiz.
+- Refer to the scoring guide to determine if you’re prepared for the Google Business Intelligence Certificate content. A score of 80% or higher is the target goal for readiness for these courses.
+- Based on your individual score, follow the recommendations in the scoring guide for your next steps.
