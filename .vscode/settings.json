@@ -1,6 +1,6 @@
 {
     // Set the Conda environment interpreter as the default for this workspace
-    "python.defaultInterpreterPath": "/Users/christopher.gonzales/miniconda3/envs/myenv/bin/python",
+    "python.defaultInterpreterPath": "/opt/miniconda3/envs/myenv/bin/python",
     
     // Optional: Configure the Jupyter server to use the local environment
     "jupyter.jupyterServerType": "local",
