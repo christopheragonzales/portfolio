@@ -1,2 +1,5 @@
 # Ignore .env file
 .env
+
+# Ignore my credentials file
+config.env
