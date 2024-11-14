@@ -1,0 +1,21 @@
+name: loan_default_env  # Name your environment
+channels:
+  - conda-forge  # Adding conda-forge to ensure wider package availability
+  - defaults
+dependencies:
+  - python>=3.9  # or another version you prefer
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - optuna
+  - scipy
+  - ipykernel
+  - pip  # Enables pip installations within the environment
+  - pip:
+    - python-dotenv
+    - fastparquet
+    - pyarrow
+    - optuna
+    - ipywidgets
