@@ -154,3 +154,12 @@ def select_most_important_features(x_variable, y_variable, data):
     important_features = X.loc[:, sfm.get_support()]
 
     return important_features
+
+def select_all_features(x_variables, y_variable, data):
+    X_dataframe = pd.DataFrame()
+
+    for variable in x_variables:
+        important_features = select_most_important_features(
+            variable, y_variable, data
+        )
+        

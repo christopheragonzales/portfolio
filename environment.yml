@@ -14,9 +14,10 @@ dependencies:
   - optuna
   - scipy
   - shap
-  - seaborn
   - pip  # Enables pip installations within the environment
   - pip:
     - graphviz  # Sometimes required as a standalone installation for plotting dependencies
     - python-dotenv
+    - fastparquet
+    - pyarrow
 
