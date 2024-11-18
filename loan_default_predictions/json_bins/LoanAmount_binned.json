@@ -1,0 +1,42 @@
+{
+    "bin_0": {
+        "lower_bound": 5000.0,
+        "upper_bound": 29362.0
+    },
+    "bin_1": {
+        "lower_bound": 29362.0,
+        "upper_bound": 53873.200000000004
+    },
+    "bin_2": {
+        "lower_bound": 53873.200000000004,
+        "upper_bound": 78476.80000000002
+    },
+    "bin_3": {
+        "lower_bound": 78476.80000000002,
+        "upper_bound": 102995.80000000002
+    },
+    "bin_4": {
+        "lower_bound": 102995.80000000002,
+        "upper_bound": 127556.0
+    },
+    "bin_5": {
+        "lower_bound": 127556.0,
+        "upper_bound": 152186.8000000001
+    },
+    "bin_6": {
+        "lower_bound": 152186.8000000001,
+        "upper_bound": 176789.0
+    },
+    "bin_7": {
+        "lower_bound": 176789.0,
+        "upper_bound": 201313.0
+    },
+    "bin_8": {
+        "lower_bound": 201313.0,
+        "upper_bound": 225614.0
+    },
+    "bin_9": {
+        "lower_bound": 225614.0,
+        "upper_bound": 249999.0
+    }
+}

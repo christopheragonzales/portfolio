@@ -1,5 +1,7 @@
 import pandas as pd
+import numpy as np
 import scipy.stats as stats
+import json
 import os
 
 import matplotlib.pyplot as plt
@@ -9,6 +11,7 @@ import re
 from sklearn.preprocessing import StandardScaler, OrdinalEncoder
 from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.feature_selection import SelectFromModel
+from sklearn.model_selection import train_test_split
 
 def run_chi2_test(ind_variable, dep_variable, df):
     # Create a contingency table
@@ -144,22 +147,62 @@ def scale_data(field, data, scaler):
 
     return transformed_series
 
-def select_most_important_features(x_variable, y_variable, data):
+def select_most_important_features(x_variable, y_variable, data, threshold="mean"):
     X = data[[x for x in data.columns if f"{x_variable}" in x]]
-
-    clf = ExtraTreesClassifier(n_estimators=50)
+    
+    # Initialize and fit ExtraTreesClassifier
+    clf = ExtraTreesClassifier(n_estimators=100, random_state=42, class_weight="balanced")
     clf.fit(X, y_variable)
-
-    sfm = SelectFromModel(clf, prefit=True)
+    
+    # Select features based on importance threshold
+    sfm = SelectFromModel(clf, threshold=threshold, prefit=True)
     important_features = X.loc[:, sfm.get_support()]
-
+    
     return important_features
 
-def select_all_features(x_variables, y_variable, data):
+def select_all_features(categorical_variables, y_variable, df, threshold="mean"):
     X_dataframe = pd.DataFrame()
+    
+    for categorical_variable in categorical_variables:
+        important_features = select_most_important_features(categorical_variable, y_variable, df, threshold=threshold)
+        X_dataframe = pd.concat([X_dataframe, important_features], axis=1)
+    
+    X_dataframe.sort_index(axis=1, inplace=True)
+    X_dataframe.reset_index(drop=True, inplace=True)
+    return X_dataframe
 
-    for variable in x_variables:
-        important_features = select_most_important_features(
-            variable, y_variable, data
-        )
-        
+def split_data(X, y):
+    X_train, X_temp, y_train, y_temp = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
+    X_test, X_val, y_test, y_val = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42, stratify=y_temp)
+
+    print(f"Percent in Training Set: {len(X_train) / len(X) * 100:.2f}%")
+    print(f"Percent in Test Set: {len(X_test) / len(X) * 100:.2f}%")
+    print(f"Percent in Validation Set: {len(X_val) / len(X) * 100:.2f}%")
+
+    return X_train, X_test, X_val, y_train, y_test, y_val
+
+def bin_continuous_variable(field, num_cuts, df):
+    try:
+        # Perform equal-frequency binning
+        series, bin_edges = pd.qcut(df[field], q=num_cuts, retbins=True, labels=np.arange(num_cuts))
+    except ValueError as e:
+        print(f"Error while binning {field}: {e}")
+        return None
+
+    # Create a dictionary of bin ranges
+    bin_dict = {}
+    for i in range(num_cuts):
+        left_bound = bin_edges[i]
+        right_bound = bin_edges[i + 1]
+        bin_dict[f"bin_{i}"] = {"lower_bound": left_bound, "upper_bound": right_bound}
+
+    # Save the bin information as a JSON file
+    os.makedirs("json_bins", exist_ok=True)
+    file_name = f"json_bins/{field}_binned.json"
+
+    with open(file_name, "w") as f:
+        json.dump(bin_dict, f, indent=4)
+
+    print(f"Binning information for {field} saved to {file_name}")
+
+    return series

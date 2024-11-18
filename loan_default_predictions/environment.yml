@@ -19,3 +19,4 @@ dependencies:
     - pyarrow
     - optuna
     - ipywidgets
+    - xgboost

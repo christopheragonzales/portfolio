@@ -1,0 +1,42 @@
+{
+    "bin_0": {
+        "lower_bound": 0.1,
+        "upper_bound": 0.18
+    },
+    "bin_1": {
+        "lower_bound": 0.18,
+        "upper_bound": 0.26
+    },
+    "bin_2": {
+        "lower_bound": 0.26,
+        "upper_bound": 0.34
+    },
+    "bin_3": {
+        "lower_bound": 0.34,
+        "upper_bound": 0.42
+    },
+    "bin_4": {
+        "lower_bound": 0.42,
+        "upper_bound": 0.5
+    },
+    "bin_5": {
+        "lower_bound": 0.5,
+        "upper_bound": 0.58
+    },
+    "bin_6": {
+        "lower_bound": 0.58,
+        "upper_bound": 0.66
+    },
+    "bin_7": {
+        "lower_bound": 0.66,
+        "upper_bound": 0.74
+    },
+    "bin_8": {
+        "lower_bound": 0.74,
+        "upper_bound": 0.82
+    },
+    "bin_9": {
+        "lower_bound": 0.82,
+        "upper_bound": 0.9
+    }
+}
