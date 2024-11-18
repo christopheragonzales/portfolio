@@ -1,0 +1,7 @@
+{
+    "jupyter.notebook.defaultKernel": "loan_default_env",
+    "jupyter.jupyterServer.kernelSpec": {
+        "display_name": "Loan Default Environment",
+        "name": "loan_default_env"
+    }
+}
