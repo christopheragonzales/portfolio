@@ -182,7 +182,13 @@ The different types of AI include:
 - **General AI (Strong AI)**: Can understand, learn, and apply knowledge across a wide range of tasks like human intelligence.
 
 ## The Evolution of AI: Traditional AI vs. Generative AI
-
+### Traditional AI Workflow
+1. **Repository**
+    - A centralized storage for organizational data
+    - Can include structured (tables, columns, rows) or unstructured data (images, documents)
+2. **Analytics Platform**
+    - Tools like SPSS Modeler or Watson Studio
+    - 
 ## Artifical Intelligence - Are We There Yet?
 
 
