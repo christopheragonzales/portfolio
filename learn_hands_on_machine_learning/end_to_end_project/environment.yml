@@ -1,0 +1,17 @@
+name: end_to_end_project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python >= 3.12
+  - pandas
+  - ipykernel
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pip
+  - pip:
+    - python-dotenv
+    - fastparquet
+    - pyarrow
