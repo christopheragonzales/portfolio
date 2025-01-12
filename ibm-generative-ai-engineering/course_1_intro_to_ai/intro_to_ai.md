@@ -1,12 +1,20 @@
 # Introduction to Artifical Intelligence
-
+---
 ## Table of Contents
 - [Artifical Intelligence vs. Augmented Intelligence](#artificial-intelligence-vs-augmented-intelligence)
 - [Introduction to Generative AI and Its Use Cases](#introduction-to-generative-ai-and-its-use-cases)
 - [Different Types of AI](#different-types-of-ai)
 - [The Evolution of AI: Traditional AI vs. Generative AI](#the-evolution-of-ai-traditional-ai-vs-generative-ai)
 - [Artificial Intelligence - Are We There Yet?](#artifical-intelligence---are-we-there-yet)
-
+- [The Evolution of AI: Traditional AI vs. Generative AI](#the-evolution-of-ai-traditional-ai-vs-generative-ai)
+- [Artificial Intelligence - Are We There Yet?](#artifical-intelligence---are-we-there-yet)
+- [AI in Daily Life](#ai-in-daily-life)
+- [AI Chatbots and Smart Assistants](#ai-chatbots-and-smart-assistants)
+- [What is a Chatbot?](#what-is-a-chatbot)
+- [Applications of AI in Different Industries](#applications-of-ai-in-different-industries)
+- [Generative AI Tools and Applications](#generative-ai-tools-and-applications)
+- [Ten Everyday AI and Machine Learning Use Cases](#ten-everyday-ai-and-machine-learning-use-cases)
+---
 ## Artificial Intelligence vs. Augmented Intelligence
 ### Story Context
 Drive to work demonstrated three forms of intelligence: human, artificial, and augmented
@@ -40,7 +48,7 @@ Drive to work demonstrated three forms of intelligence: human, artificial, and a
 ### Takeaways
 - Both AI and augmented intelligence have their strengths
 - Augmented intelligence allows humans to thrive while leveraging machine capabilities
-
+---
 ## Introduction to Generative AI and Its Use Cases
 ### Key Concepts
 - **Definition**: Generative AI (GenAI) creates new and novel concepts (e.g. text, images, music, videos) from scratch using deep learning techniques and large datasets.
@@ -100,7 +108,7 @@ Drive to work demonstrated three forms of intelligence: human, artificial, and a
     - Industry-specific: Healthcare, gaming, fashion, education
 - **Significance**
     - Drives innovation and improves efficiency across sectors
-
+---
 ## Different Types of AI
 ### AI Types
 1. **Diagnostic/Descriptive AI**
@@ -180,7 +188,7 @@ The different types of AI include:
 - **Self-aware AI**: Represents the most advanced form of AI, which has its own consciousness and self-awareness.
 - **Narrow AI (Weak AI)**: Designed to perform a specific task or a limited range of tasks.
 - **General AI (Strong AI)**: Can understand, learn, and apply knowledge across a wide range of tasks like human intelligence.
-
+---
 ## The Evolution of AI: Traditional AI vs. Generative AI
 ### Traditional AI Workflow
 1. **Repository**
@@ -188,8 +196,83 @@ The different types of AI include:
     - Can include structured (tables, columns, rows) or unstructured data (images, documents)
 2. **Analytics Platform**
     - Tools like SPSS Modeler or Watson Studio
-    - 
+    - Data from the repository is used here to build predictive models
+3. **Application Layer**
+    - Hosts the models for business use cases
+    - Example: Predict customer churn and take actions to prevent it
+4. **Feedback Loop**
+    - Key to making Traditional AI systems adaptive
+    - Improves models based on successes or mistakes (e.g. learning from incorrect churn predictions)
+### GenAI Workflow
+1. **Data Source**
+    - Data is not confined to an organization's repository, but comes from a massive global dataset
+    - Incorporates diverse information from broad domains (e.g., "data from earth")
+2. **Large Language Models (LLMs)**
+    - Built on vast quantities of generative data
+    - Highly powerful and flexible, but lacks specificity for individual business use cases
+3. **Prompting and Tuning**
+    - Bridges the gap between general knowledge in LLMs and business-specific requirements
+    - Fine-tunes models for nuanced and organization-specific applications (e.g., understanding idiosyncratic customer chrun factors)
+4. **Application Layer**
+    - Similar to traditional AI, where models are deployed for practical use.
+5. **Feedback Loop**
+    - Focuses on refining the propmpting and tuning layer rather than the models themselves
+### Key Differences
+- **Data Scope**: Traditional AI uses organization-specific data; GenAI leverages massive, global datasets
+- **Model Size**: GenAI involves significantly larger models (e.g., LLMs)
+- **Architecture**: GenAI requires a new paradigm due to the scale of data and models, which surpasses what can be stored in traditional repositories
+### Summary
+GenAI fundamentally differs from traditional AI in its reliance on vast, diverse datasets and large scale models. While traditional AI is centered around Predictive analytics with a feedback loop for continuous learning, GenAI incorporates prompting and tuning to tailor massive, generalized models to specific business needs
+
+---
 ## Artifical Intelligence - Are We There Yet?
-
-
-
+### What defines AI?
+- **Definition**: Simulation of intelligent behavior in computers
+- **Current Status**: Narrow AI (task-specific intelligence) exists, but Artificial General Intelligence (AGI) - equivalent to human intelligence - is not achieved yet.
+### Examples of AI Milestones
+1. **Arithmetic Calculations**
+    - Example: Performing complex calcuations instantly
+    - Conclusion: Impressive, but not indicative of intelligence; akin to using a calculator
+2. **Memorization (e.g., Periodic Table)**
+    - Example: Memorizing and recalling vast data accurately
+    - Conclusion: More of a "database lookup" than true intelligence
+3. **Chess Grandmaster**
+    - Example: IBM's Deep Blue defeated the world's best chess player in 1997
+    - Conclusion: Success in a narrowly defined domain, but still not an AGI
+4. **The Turning Test**
+    - **Definition**: A machine is considered intelligent if a user cannot distinguish between interacting with it or a human.
+    - Example: In 2014, a chatbot simulating a 13-year-old boy arguably passed the Turning test
+    - Conclusion: While impressive, the bar for true human-like intelligence remains high
+### Challenges in Achieving AGI
+- **Siloed Savants**: AI excels in specific tasks (e.g., arithmetic, memorization, chess), but lacks holistic human intelligence
+- **Emotional Intelligence and Generalization**: True AGI requires a combination of emotional, cognitive, and general intelligence
+- **Moving the Finish Line**: Each time AI achieves a milestone, the definition of "intelligence" evolves, pushing the goalposts further.
+### Recent progress and the Future of AGI
+- **Accelerated Development**
+    - Recent years have seen rapid advancements, narrowing the gap toward AGI
+    - Transitioning from siloed systems (e.g., Deep Blue) to multifuctional systems (e.g., ChatGPT)
+- **AGI Outlook**
+    - Still not achieved, but closer than ever
+    - The development curve has steepened with progress accelerating faster than expected
+### How AI is Used in Daily Life
+- Self-driving cars: relies on AI for navigation and control
+- Generating professional-quality photos through advanced prompting
+---
+## AI in Daily Life
+1. **Personalized Experiences**
+    - **Social Media**: Platforms like Facebook and Instagram customize content based on user interactions and preferences
+    - **Entertainment**: Streaming services like Netflix and Spotify suggest movies, shows, and music tailored to viewing/listening habits
+    - **E-commerce**: Amazon and eBay offer personalized product recommendations, visual search, and chatbot assistance for enhanced shopping experiences
+2. **Smart Home Automation**
+    - **Devices**: Thermostat, lights, and security cameras
+---
+## AI Chatbots and Smart Assistants
+---
+## What is a Chatbot?
+---
+## Applications of AI in Different Industries
+---
+## Generative AI Tools and Applications
+---
+## Ten Everyday AI and Machine Learning Use Cases
+---
