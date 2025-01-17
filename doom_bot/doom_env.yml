@@ -1,0 +1,13 @@
+name: doom_bot
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - fastapi
+  - uvicorn
+  - pip
+  - pip:
+    - transformers # Robots in disguise
+    - tensorflow
+    - torch
